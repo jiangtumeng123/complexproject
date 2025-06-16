@@ -1,0 +1,226 @@
+.profile-layout {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.profile-content {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-container {
+  width: 100%;
+  max-width: 800px;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+}
+
+.profile-avatar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-size: 48px;
+  color: white;
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h2 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-weight: 600;
+}
+
+.integral-info {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.profile-form {
+  padding: 24px;
+}
+
+.ant-form-item {
+  margin-bottom: 24px;
+}
+
+.ant-form-item-label {
+  padding: 0 0 8px;
+}
+
+.ant-form-item-label > label {
+  font-weight: 600;
+  color: #000;
+  font-size: 15px;
+  height: auto;
+  line-height: 1.5;
+}
+
+.ant-input-affix-wrapper {
+  padding: 8px 11px;
+  border: 2px solid #d9d9d9;
+  border-radius: 8px;
+  transition: all 0.3s;
+  background-color: #fff;
+  height: 45px;
+}
+
+.ant-input-affix-wrapper:hover {
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.1);
+}
+
+.ant-input-affix-wrapper-focused,
+.ant-input-affix-wrapper:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+.ant-input,
+.ant-input-affix-wrapper .ant-input {
+  color: #000 !important;
+  background: #fff !important;
+}
+
+.ant-input::placeholder {
+  color: #999;
+}
+
+.ant-input-prefix {
+  margin-right: 12px;
+  color: #1677ff !important;
+  font-size: 18px;
+}
+
+.ant-form-item-required::before {
+  color: #ff4d4f;
+  margin-right: 4px;
+  font-size: 14px;
+}
+
+.profile-form .ant-form-item {
+  margin-bottom: 28px;
+}
+
+.profile-form .ant-form-item-label {
+  padding: 0 0 12px;
+}
+
+.ant-btn {
+  height: 40px;
+  padding: 6.4px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.5715;
+  transition: all 0.3s;
+}
+
+.ant-btn-primary {
+  background: #667eea !important;
+  border-color: #667eea !important;
+}
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+  background: #7687ea !important;
+  border-color: #7687ea !important;
+}
+
+.ant-divider {
+  margin: 24px 0;
+  border-top: 1px solid #f0f0f0;
+}
+
+.ant-typography {
+  margin-bottom: 1em;
+}
+
+h4.ant-typography {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 576px) {
+  .profile-content {
+    padding: 16px;
+  }
+  
+  .profile-card {
+    padding: 16px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .profile-info {
+    text-align: center;
+  }
+
+  .profile-form {
+    padding: 16px;
+  }
+}
+
+/* 头部导航固定样式 */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100; /* 提高导航栏的z-index */
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  height: 64px;
+  line-height: 64px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  height: 100%;
+}
+
+.header .ant-menu {
+  line-height: 64px;
+  border-bottom: none;
+}
+
+.header .logo {
+  margin-right: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  height: 45px; /* 调整logo大小 */
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}

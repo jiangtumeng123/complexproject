@@ -1,0 +1,56 @@
+.admin-review-layout {
+  min-height: 100vh;
+}
+
+.admin-review-header {
+  background: #fff;
+  padding: 0 24px;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+}
+
+.admin-review-header h1 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 64px;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #1890ff 0%, #40a9ff 100%);
+  border: none;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.3);
+  background: linear-gradient(135deg, #40a9ff 0%, #69c0ff 100%);
+}
+
+.back-button:active {
+  transform: translateY(0);
+}
+
+.admin-review-content {
+  margin: 24px;
+  padding: 24px;
+  background: #fff;
+  min-height: 280px;
+}
+
+.admin-review-table-wrapper {
+  margin-top: 16px;
+}
+
+.ant-tag {
+  margin-right: 0;
+}
+
+.ant-image {
+  margin-right: 8px;
+} 

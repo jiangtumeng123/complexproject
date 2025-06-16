@@ -1,0 +1,78 @@
+.activity-status-layout {
+  min-height: 100vh;
+  padding-top: 64px;
+}
+
+.activity-status-header {
+  background: #fff;
+  padding: 8px 24px;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  min-height: 64px;
+}
+
+.activity-status-header h1 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 64px;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #1890ff 0%, #40a9ff 100%);
+  border: none;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.3);
+  background: linear-gradient(135deg, #40a9ff 0%, #69c0ff 100%);
+}
+
+.back-button:active {
+  transform: translateY(0);
+}
+
+.activity-status-content {
+  margin: 24px;
+  padding: 24px;
+  background: #fff;
+  min-height: 280px;
+}
+
+.activity-status-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.activity-status-card .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.activity-status-card .ant-card-head-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.ant-tag {
+  margin-right: 0;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.ant-tag-success {
+  background: #f6ffed;
+  border-color: #b7eb8f;
+  color: #52c41a;
+}
+
+.ant-tag-error {
+  background: #fff2f0;
+  border-color: #ffccc7;
+  color: #ff4d4f;
+} 

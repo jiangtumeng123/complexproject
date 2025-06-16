@@ -1,0 +1,73 @@
+.add-gift-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.gift-form-card {
+  width: 480px;
+  max-width: 90vw;
+  margin: 40px 0;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+  padding: 32px 24px 24px 24px;
+  background: #fff;
+}
+
+.gift-form {
+  margin-top: 24px;
+}
+
+.gift-form .ant-form-item {
+  margin-bottom: 28px;
+}
+
+.gift-uploader {
+  border: 1px dashed #d9d9d9;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-color 0.3s;
+  margin: 0 auto;
+}
+
+.gift-uploader:hover {
+  border-color: #1890ff;
+}
+
+.gift-uploader-icon {
+  font-size: 36px;
+  color: #8c939d;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+}
+
+.gift-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.upload-tip {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.gift-form .ant-btn {
+  height: 40px;
+  font-size: 16px;
+  padding: 0 32px;
+} 

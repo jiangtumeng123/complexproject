@@ -1,0 +1,146 @@
+/* 让背景铺满整个屏幕，确保无错位 */
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* 防止出现滚动条 */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* 登录容器：固定铺满整个页面 */
+  .login-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    top: 0;
+    left: 0;
+  }
+  
+  /* 玻璃拟态卡片 */
+  .login-card {
+    width: 420px;
+    padding: 32px;
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+  }
+  
+  /* 标题样式 */
+  .login-title {
+    color: white !important;
+    font-weight: bold !important;
+    font-size: 24px !important;
+    margin-bottom: 24px !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 表单项样式 */
+  .ant-form-item {
+    margin-bottom: 24px !important;
+  }
+  
+  .ant-input-affix-wrapper {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 6px !important;
+  }
+  
+  .ant-input-affix-wrapper:hover,
+  .ant-input-affix-wrapper:focus,
+  .ant-input-affix-wrapper-focused {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  .ant-input-prefix {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  
+  /* 输入框内文字颜色 */
+  .ant-input,
+  .ant-input-password {
+    background: transparent !important;
+    color: white !important;
+  }
+  
+  .ant-input::placeholder,
+  .ant-input-password::placeholder {
+    color: rgba(255, 255, 255, 0.6) !important;
+  }
+  
+  /* 密码框小眼睛图标 */
+  .ant-input-password-icon {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  
+  /* 让按钮水平对齐 */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 24px;
+  }
+  
+  /* 统一按钮样式 */
+  .action-btn {
+    flex: 1;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* 登录按钮 */
+  .action-btn:first-child {
+    background: #4c8bf5 !important;
+    border: none !important;
+    color: white !important;
+  }
+  
+  .action-btn:first-child:hover {
+    background: #3a6fd9 !important;
+    transform: translateY(-2px);
+  }
+  
+  /* 注册按钮 */
+  .action-btn:last-child {
+    background: transparent !important;
+    border: 1px solid white !important;
+    color: white !important;
+  }
+  
+  .action-btn:last-child:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    transform: translateY(-2px);
+  }
+  
+  /* 错误提示文字 */
+  .ant-form-item-explain-error {
+    color: #ffd6d6 !important;
+  }
+  
+  /* 适配小屏幕 */
+  @media (max-width: 500px) {
+    .login-card {
+      width: 90%;
+      padding: 24px;
+    }
+  
+    .login-title {
+      font-size: 20px !important;
+    }
+  
+    .action-btn {
+      font-size: 14px;
+      height: 38px;
+    }
+  }
+  

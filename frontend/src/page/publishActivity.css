@@ -1,0 +1,309 @@
+.publish-layout {
+  min-height: 100vh;
+  background: #fff;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px;
+  position: relative;
+}
+
+.nav-back-btn {
+  padding: 0;
+  font-size: 20px;
+  color: #333;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+}
+
+.nav-back-btn:hover {
+  color: #1890ff;
+}
+
+.nav-title {
+  flex: 1;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+.main-container {
+  padding-top: 44px;
+  height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+  background: #fff;
+}
+
+.publish-form {
+  background: #fff;
+}
+
+.form-item {
+  margin-bottom: 24px;
+}
+
+.form-item .ant-form-item-label {
+  padding-bottom: 8px;
+}
+
+.form-item .ant-form-item-label > label {
+  font-size: 15px;
+  color: #333;
+  height: 22px;
+}
+
+.form-item .ant-form-item-label > label.ant-form-item-required::before {
+  color: #ff4d4f;
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.form-item .ant-input,
+.form-item .ant-picker {
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s ease;
+}
+
+.form-item .ant-input:hover,
+.form-item .ant-picker:hover {
+  border-color: #40a9ff;
+}
+
+.form-item .ant-input:focus,
+.form-item .ant-picker-focused {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.1);
+}
+
+.form-item .ant-input-textarea textarea {
+  border-radius: 4px;
+  padding: 8px 12px;
+  min-height: 120px;
+}
+
+.upload-item .ant-upload.ant-upload-select-picture-card {
+  width: 100px;
+  height: 100px;
+  margin: 0 8px 8px 0;
+  border-radius: 4px;
+  border: 1px dashed #d9d9d9;
+  transition: all 0.3s ease;
+}
+
+.upload-item .ant-upload.ant-upload-select-picture-card:hover {
+  border-color: #40a9ff;
+}
+
+.upload-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+}
+
+.upload-button .anticon {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.upload-hint {
+  color: #999;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.activity-uploader .ant-upload-list-picture-card-container {
+  width: 100px;
+  height: 100px;
+  margin: 0 8px 8px 0;
+}
+
+.activity-uploader .ant-upload-list-picture-card .ant-upload-list-item {
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.submit-item {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.submit-button {
+  height: 44px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  background: #4e6ef2;
+  border-color: #4e6ef2;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background: #5e7ef2;
+  border-color: #5e7ef2;
+}
+
+/* 自定义滚动条样式 */
+.main-container::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* 响应式调整 */
+@media screen and (min-width: 768px) {
+  .fixed-header {
+    height: 52px;
+  }
+
+  .nav-content {
+    padding: 0 24px;
+  }
+
+  .nav-back-btn {
+    height: 52px;
+    width: 52px;
+  }
+
+  .nav-title {
+    font-size: 18px;
+  }
+
+  .main-container {
+    padding-top: 52px;
+  }
+
+  .form-container {
+    padding: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form-container {
+    padding: 16px;
+  }
+
+  .form-item {
+    margin-bottom: 20px;
+  }
+
+  .upload-item .ant-upload.ant-upload-select-picture-card,
+  .activity-uploader .ant-upload-list-picture-card-container {
+    width: 90px;
+    height: 90px;
+  }
+
+  .submit-button {
+    height: 40px;
+  }
+}
+
+/* 地图相关样式 */
+.map-modal .ant-modal-body {
+  padding: 16px;
+}
+
+.map-search {
+  margin-bottom: 16px;
+}
+
+.map-container {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #e8e8e8;
+}
+
+.map-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.selected-location {
+  margin-top: 16px;
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333;
+  font-size: 14px;
+}
+
+.selected-location .anticon {
+  color: #1890ff;
+  font-size: 16px;
+}
+
+/* 地点选择输入框样式 */
+.form-item .ant-input[readonly] {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.form-item .ant-input[readonly]:hover {
+  border-color: #40a9ff;
+}
+
+/* 地图弹窗响应式调整 */
+@media screen and (max-width: 767px) {
+  .map-modal {
+    max-width: 90vw !important;
+    margin: 24px auto !important;
+  }
+
+  .map-container {
+    height: 300px;
+  }
+
+  .selected-location {
+    font-size: 13px;
+  }
+} 

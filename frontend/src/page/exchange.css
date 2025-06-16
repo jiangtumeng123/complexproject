@@ -1,0 +1,152 @@
+.exchange-layout {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.exchange-header {
+  background: #fff;
+  padding: 0 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-left .ant-typography {
+  margin-bottom: 0 !important;
+}
+
+.exchange-content {
+  padding: 24px;
+  background: #f0f2f5;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-section {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.exchange-confirm {
+  display: flex;
+  gap: 24px;
+  padding: 16px;
+}
+
+.exchange-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ant-card {
+  transition: all 0.3s;
+}
+
+.ant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ant-card-cover img {
+  border-radius: 8px 8px 0 0;
+}
+
+.ant-card-meta-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.ant-tag {
+  font-size: 14px;
+  padding: 2px 8px;
+}
+
+.ant-space {
+  width: 100%;
+}
+
+.ant-btn {
+  height: 40px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .exchange-confirm {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .exchange-info {
+    text-align: center;
+  }
+}
+
+/* 自定义滚动条样式 (与 activities.css 一致) */
+.exchange-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.exchange-content::-webkit-scrollbar-track {
+  background: #f0f2f5;
+  border-radius: 4px;
+}
+
+.exchange-content::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.exchange-content::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* 调整包裹礼品卡片的 Row 的样式 */
+.gifts-row {
+  /* 移除 flex-grow */
+  /* flex-grow: 1; */
+  /* min-height: 700px; /* 如果需要固定高度以防分页器上移，可以保留这个最小高度 */
+}
+
+/* 给 Col 设置最小宽度，防止内容被压缩 */
+.gifts-row .ant-col {
+  min-width: 280px; /* 根据你的设计和内容调整这个值 */
+}
+
+/* 样式化分页器容器，确保其在内容底部 */
+.pagination-container {
+  margin-top: auto;
+  text-align: center;
+  padding-top: 24px;
+} 
